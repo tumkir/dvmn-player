@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Пример плеера</title>
+    <meta charset="utf-8">
+    <script src="https://kit.fontawesome.com/50389a3801.js" crossorigin="anonymous"></script>
+    <style type="text/css">
+        div#player {
+            display: flex;
+            flex-direction: column;
+            width: 800px;
+            height: 600px;
+            box-shadow: 0 0 20px 5px rgba(0, 0, 0, .7);
+        }
+
+        div.js-video-container {
+            flex-grow: 1;
+        }
+
+        .player-button {
+            border-style: hidden;
+            color: white;
+            background-color: transparent;
+            padding: 0px 10px;
+            font-size: large;
+        }
+
+        .js-fullscreen-button {
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="player">
+
+        <div class="js-video-container"></div>
+
+        <div style="background-color: black">
+            <button class="js-play-button player-button"><i class="fas fa-play"></i></button>
+            <button class="js-pause-button player-button"><i class="fas fa-pause"></i></button>
+            <button class="js-volume-button player-button"><i class="fas fa-volume-off"></i></button>
+            <button class="js-mute-button player-button"><i class="fas fa-volume-up"></i></button>
+            <button class="js-fullscreen-button player-button"><i class="fas fa-expand"></i></button>
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://unpkg.com/playable@2.10.3/dist/statics/playable.bundle.min.js"></script>
+    <script src="./js/player.js"></script>
+
+    <script type="text/javascript">
+        createPlayer({
+            elementId: 'player'
+        });
+    </script>
+
+</body>
+
+</html>
