@@ -1,6 +1,6 @@
 # Видеоплеер
 
-[Пример готового плеера](https://tumkir.github.io/dvmn-player)
+[Пример готового плеера](https://tumkir.github.io/dvmn-player/src/index.html)
 
 ![Screenshot player](./screenshot/player.png)
 
